@@ -1,0 +1,6 @@
+.tab-content {
+  position: relative;
+  &:not(.is-selected) {
+    display: none;
+  }
+}

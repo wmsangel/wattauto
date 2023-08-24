@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="ru" manifest="cache.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Watt Auto</title>
+</head>
+<body>
+
+<div id="app">
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="header__left">
+                    <div class="header-email">
+                        <div class="header-mini-title">e-mail:</div>
+                        <a href="mailto:watt-auto@mail.ru">watt-auto@mail.ru</a>
+                    </div>
+                    <div class="header-time">
+                        <div class="header-mini-title">режим работы:</div>
+                        ежедневно: c 9 до 20
+                    </div>
+                </div>
+                <div class="header__middle header-logo">
+                    <a href="index.html"><img src="img/logo.svg" alt=""></a>
+                </div>
+                <div class="header__right">
+                    <div class="header-call">
+                        <div class="header-mini-title"><a href="#" class="js-popup-btn" data-popup-id="order-call">заказать звонок</a></div>
+                        <a href="tel:+89909999099">8 (990) 999-90-99</a>
+                    </div>
+                    <div class="header-social">
+                        <a href="#" target="_blank" class="social-link social-link--telegram"></a>
+                        <a href="#" target="_blank" class="social-link social-link--instagram"></a>
+                        <a href="#" target="_blank" class="social-link social-link--vk"></a>
+                        <a href="#" target="_blank" class="social-link social-link--whatsapp"></a>
+                    </div>
+                </div>
+
+                <button class="js-mobile-menu-btn mobile-menu-btn"></button>
+            </div>
+        </div>
+        <div class="nav-wrap js-mobile-nav">
+            <div class="container">
+                <div class="nav">
+                    <div class="nav-main">
+                        <ul class="nav-list">
+                            <li class="nav-item nav-item--dropdown">
+                                <a href="#" class="js-dropdown-link nav-link">Автомобили</a>
+                                <ul class="nav-dropdown js-nav-dropdown">
+                                    <li><a href="#" class="nav-dropdown-link">Автомобили</a></li>
+                                    <li><a href="#" class="nav-dropdown-link">В пути</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Доп. оборудование</a>
+                            </li>
+                            <li class="nav-item nav-item--dropdown">
+                                <a href="#" class="js-dropdown-link nav-link">Покупка</a>
+                                <ul class="nav-dropdown js-nav-dropdown">
+                                    <li><a href="#" class="nav-dropdown-link">Лучшая цена</a></li>
+                                    <li><a href="#" class="nav-dropdown-link">Покупка в кредит</a></li>
+                                    <li><a href="#" class="nav-dropdown-link">Страхование</a></li>
+                                    <li><a href="#" class="nav-dropdown-link">Лизинг для юр. лиц</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item--dropdown">
+                                <a href="#" class="js-dropdown-link nav-link">Владельцам</a>
+                                <ul class="nav-dropdown js-nav-dropdown">
+                                    <li><a href="#" class="nav-dropdown-link">Сервис</a></li>
+                                    <li><a href="#" class="nav-dropdown-link">Эксплуатация в России</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item--dropdown">
+                                <a href="#" class="js-dropdown-link nav-link">О нас</a>
+                                <ul class="nav-dropdown js-nav-dropdown">
+                                    <li><a href="#" class="nav-dropdown-link">История/возможности</a></li>
+                                    <li><a href="#" class="nav-dropdown-link">Доставка в крупные города ЕАЭС</a></li>
+                                    <li><a href="#" class="nav-dropdown-link">Клуб Watt Auto</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item nav-item--dropdown nav-item--dropdown-brands">
+                                <a href="#" class="js-dropdown-link nav-link">Марки авто</a>
+                                <ul class="nav-dropdown js-nav-dropdown">
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_1.png" alt="">
+                                            <span>LOTUS</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_2.png" alt="">
+                                            <span>ZEEKR</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_3.png" alt="">
+                                            <span>LI</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_4.png" alt="">
+                                            <span>VOYAH</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_5.png" alt="">
+                                            <span>BYD</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_6.png" alt="">
+                                            <span>HONGQI</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_7.png" alt="">
+                                            <span>HIPHI</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_8.png" alt="">
+                                            <span>NIO</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_9.png" alt="">
+                                            <span>AVATR</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_10.png" alt="">
+                                            <span>XPENG</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_1.png" alt="">
+                                            <span>LOTUS</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_2.png" alt="">
+                                            <span>ZEEKR</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_3.png" alt="">
+                                            <span>LI</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_4.png" alt="">
+                                            <span>VOYAH</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_5.png" alt="">
+                                            <span>BYD</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_6.png" alt="">
+                                            <span>HONGQI</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_7.png" alt="">
+                                            <span>HIPHI</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_8.png" alt="">
+                                            <span>NIO</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_9.png" alt="">
+                                            <span>AVATR</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_10.png" alt="">
+                                            <span>XPENG</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_1.png" alt="">
+                                            <span>LOTUS</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_2.png" alt="">
+                                            <span>ZEEKR</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_3.png" alt="">
+                                            <span>LI</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_4.png" alt="">
+                                            <span>VOYAH</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_5.png" alt="">
+                                            <span>BYD</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_6.png" alt="">
+                                            <span>HONGQI</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_7.png" alt="">
+                                            <span>HIPHI</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_8.png" alt="">
+                                            <span>NIO</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_9.png" alt="">
+                                            <span>AVATR</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="nav-dropdown-link">
+                                            <img src="img/brands/brand_10.png" alt="">
+                                            <span>XPENG</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav-additional">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">Справочник</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs">
+                    <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-item__link">Главная</a></li>
+                    <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-item__link">Электромобили</a></li>
+                    <li class="breadcrumbs-item">NIO ET 7</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section-page-header">
+            <img src="img/headers/catalog-dop-page.jpeg" alt="">
+        </section>
+
+        <section class="section-content">
+            <div class="container">
+                <h1>NIO ET 7</h1>
+
+                <div class="product-page-detail">
+                    <div class="product-page-detail__left">
+                        <div class="product-page-detail__col">
+                            <div class="product-page-detail__title">запас хода</div>
+                            <div class="product-page-detail__info">500 км</div>
+                        </div>
+                        <div class="product-page-detail__col">
+                            <div class="product-page-detail__title">пробег</div>
+                            <div class="product-page-detail__info">20 000 км</div>
+                        </div>
+                        <div class="product-page-detail__col">
+                            <div class="product-page-detail__title">ёмкость батареи</div>
+                            <div class="product-page-detail__info">112 кВт.ч</div>
+                        </div>
+                        <div class="product-page-detail__col">
+                            <div class="product-page-detail__title">тип двигателя</div>
+                            <div class="product-page-detail__info">электродвигатель</div>
+                        </div>
+                        <div class="product-page-detail__col">
+                            <div class="product-page-detail__title">габаритные размеры</div>
+                            <div class="product-page-detail__info">4785x1930x1620 (мм)</div>
+                        </div>
+                        <div class="product-page-detail__col">
+                            <div class="product-page-detail__title">привод</div>
+                            <div class="product-page-detail__info">500 км</div>
+                        </div>
+                        <div class="product-page-detail__col">
+                            <div class="product-page-detail__title">от 0 до 100 км/ч:</div>
+                            <div class="product-page-detail__info">10 сек</div>
+                        </div>
+                        <div class="product-page-detail__col">
+                            <div class="product-page-detail__title">крутящий момент</div>
+                            <div class="product-page-detail__info">710 - 985 н.м</div>
+                        </div>
+                        <div class="product-page-detail__col">
+                            <div class="product-page-detail__title">расход топлива</div>
+                            <div class="product-page-detail__info">0</div>
+                        </div>
+                        <div class="product-page-detail__col">
+                            <div class="product-page-detail__title">мощность</div>
+                            <div class="product-page-detail__info">653 л.с.</div>
+                        </div>
+                    </div>
+                    <div class="product-page-detail__right">
+                        <div class="product-page-detail__price">от <span>8 230 000</span> руб</div>
+                        <div class="product-page-detail__btn">
+                            <a href="#" class="btn btn-black">Заказать</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-page-gallery">
+                    <div class="product-page-gallery__top">
+                        <div class="product-page-gallery__title">Фотогалерея</div>
+                        <div class="product-page-gallery__nav">
+                            <div class="js-product-gallery-nav swiper-button-prev"></div>
+                            <div class="js-product-gallery-nav swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="product-page-gallery__list">
+                        <div class="swiper product-page-gallery-list js-product-page-gallery">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide product-page-gallery__item">
+                                    <a href="img/product/product-img-1.jpeg" data-fancybox="main-gallery">
+                                        <img src="img/product/product-img-1.jpeg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide product-page-gallery__item">
+                                    <a href="img/product/product-img-2.jpeg" data-fancybox="main-gallery">
+                                        <img src="img/product/product-img-2.jpeg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide product-page-gallery__item">
+                                    <a href="img/product/product-img-1.jpeg" data-fancybox="main-gallery">
+                                        <img src="img/product/product-img-1.jpeg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide product-page-gallery__item">
+                                    <a href="img/product/product-img-2.jpeg" data-fancybox="main-gallery">
+                                        <img src="img/product/product-img-2.jpeg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide product-page-gallery__item">
+                                    <a href="img/product/product-img-1.jpeg" data-fancybox="main-gallery">
+                                        <img src="img/product/product-img-1.jpeg" alt="">
+                                    </a>
+                                </div>
+                                <div class="swiper-slide product-page-gallery__item">
+                                    <a href="img/product/product-img-2.jpeg" data-fancybox="main-gallery">
+                                        <img src="img/product/product-img-2.jpeg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="car-body-color">
+                    <div class="car-body-color__choice">
+                        <div class="car-body-color__title">
+                            Цвета кузова
+                        </div>
+                        <div class="car-body-color__list">
+                            <div class="car-body-color__name js-car-body-color-name">Серый металик</div>
+                            <div class="car-body-color__tabs-nav">
+                                <a href="#" class="car-body-color__tabs-nav-item js-tab-btn is-selected" style="background-color: #D9D9D9" data-color-name="Серый металик" data-tab-id="1" data-tab-group="1"></a>
+                                <a href="#" class="car-body-color__tabs-nav-item js-tab-btn" style="background-color: #000" data-color-name="Черный" data-tab-id="2" data-tab-group="1"></a>
+                                <a href="#" class="car-body-color__tabs-nav-item js-tab-btn" style="background-color: #D8C5AA" data-color-name="Бежевый" data-tab-id="3" data-tab-group="1"></a>
+                                <a href="#" class="car-body-color__tabs-nav-item js-tab-btn" style="background-color: #365368" data-color-name="Голубой" data-tab-id="4" data-tab-group="1"></a>
+                                <a href="#" class="car-body-color__tabs-nav-item js-tab-btn" style="background-color: #FFF" data-color-name="Белый" data-tab-id="5" data-tab-group="1"></a>
+                            </div>
+                        </div>
+                        <div class="car-body-color__text">
+                            <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.</p>
+                        </div>
+                    </div>
+                    <div class="car-body-color__gallery">
+                        <div class="tab-content js-tab-content is-selected" data-tab-id="1" data-tab-group="1">
+                            <div class="swiper js-car-color-body-gallery" data-gallery="1">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/product/product-img-3.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-1.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-2.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-1.jpeg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="js-car-color-body-gallery-nav swiper-button-prev" data-gallery="1"></div>
+                            <div class="js-car-color-body-gallery-nav swiper-button-next" data-gallery="1"></div>
+                        </div>
+                        <div class="tab-content js-tab-content" data-tab-id="2" data-tab-group="1">
+                            <div class="swiper js-car-color-body-gallery" data-gallery="2">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/product/product-img-1.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-2.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-3.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-3.jpeg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="js-car-color-body-gallery-nav swiper-button-prev" data-gallery="2"></div>
+                            <div class="js-car-color-body-gallery-nav swiper-button-next" data-gallery="2"></div>
+                        </div>
+                        <div class="tab-content js-tab-content" data-tab-id="3" data-tab-group="1">
+                            <div class="swiper js-car-color-body-gallery" data-gallery="3">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/product/product-img-3.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-1.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-3.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-2.jpeg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="js-car-color-body-gallery-nav swiper-button-prev" data-gallery="3"></div>
+                            <div class="js-car-color-body-gallery-nav swiper-button-next" data-gallery="3"></div>
+                        </div>
+                        <div class="tab-content js-tab-content" data-tab-id="4" data-tab-group="1">
+                            <div class="swiper js-car-color-body-gallery" data-gallery="4">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/product/product-img-2.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-3.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-1.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-3.jpeg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="js-car-color-body-gallery-nav swiper-button-prev" data-gallery="4"></div>
+                            <div class="js-car-color-body-gallery-nav swiper-button-next" data-gallery="4"></div>
+                        </div>
+                        <div class="tab-content js-tab-content" data-tab-id="5" data-tab-group="1">
+                            <div class="swiper js-car-color-body-gallery" data-gallery="5">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/product/product-img-1.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-3.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-2.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/product-img-3.jpeg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="js-car-color-body-gallery-nav swiper-button-prev" data-gallery="5"></div>
+                            <div class="js-car-color-body-gallery-nav swiper-button-next" data-gallery="5"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interior-colors">
+                    <div class="interior-colors__title">Цвета салона</div>
+                    <div class="interior-colors__gallery">
+                        <div class="tab-content js-tab-content is-selected" data-tab-id="1" data-tab-group="2">
+                            <div class="swiper js-car-color-interior-gallery" data-gallery="6">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="js-car-color-interior-gallery-nav swiper-button-prev" data-gallery="6"></div>
+                            <div class="js-car-color-interior-gallery-nav swiper-button-next" data-gallery="6"></div>
+                        </div>
+                        <div class="tab-content js-tab-content" data-tab-id="2" data-tab-group="2">
+                            <div class="swiper js-car-color-interior-gallery" data-gallery="7">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="js-car-color-interior-gallery-nav swiper-button-prev" data-gallery="7"></div>
+                            <div class="js-car-color-interior-gallery-nav swiper-button-next" data-gallery="7"></div>
+                        </div>
+                        <div class="tab-content js-tab-content" data-tab-id="3" data-tab-group="2">
+                            <div class="swiper js-car-color-interior-gallery" data-gallery="8">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="js-car-color-interior-gallery-nav swiper-button-prev" data-gallery="8"></div>
+                            <div class="js-car-color-interior-gallery-nav swiper-button-next" data-gallery="8"></div>
+                        </div>
+                        <div class="tab-content js-tab-content" data-tab-id="4" data-tab-group="2">
+                            <div class="swiper js-car-color-interior-gallery" data-gallery="9">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="js-car-color-interior-gallery-nav swiper-button-prev" data-gallery="9"></div>
+                            <div class="js-car-color-interior-gallery-nav swiper-button-next" data-gallery="9"></div>
+                        </div>
+                        <div class="tab-content js-tab-content" data-tab-id="5" data-tab-group="2">
+                            <div class="swiper js-car-color-interior-gallery" data-gallery="10">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                    <div class="swiper-slide"><img src="img/product/salon-img.jpeg" alt=""></div>
+                                </div>
+                            </div>
+                            <div class="js-car-color-interior-gallery-nav swiper-button-prev" data-gallery="10"></div>
+                            <div class="js-car-color-interior-gallery-nav swiper-button-next" data-gallery="10"></div>
+                        </div>
+                    </div>
+                    <div class="interior-colors-choice">
+                        <div class="interior-colors-choice__left">
+                            <div class="interior-colors-choice__title">Цвета кузова</div>
+                            <div class="interior-colors-choice__name js-car-body-color-name">Серый металик</div>
+                            <div class="interior-colors-choice__tabs-nav">
+                                <a href="#" class="interior-colors-choice__tabs-nav-item js-tab-btn is-selected" style="background-color: #D9D9D9" data-color-name="Серый металик" data-tab-id="1" data-tab-group="2"></a>
+                                <a href="#" class="interior-colors-choice__tabs-nav-item js-tab-btn" style="background-color: #000" data-color-name="Черный" data-tab-id="2" data-tab-group="2"></a>
+                                <a href="#" class="interior-colors-choice__tabs-nav-item js-tab-btn" style="background-color: #D8C5AA" data-color-name="Бежевый" data-tab-id="3" data-tab-group="2"></a>
+                                <a href="#" class="interior-colors-choice__tabs-nav-item js-tab-btn" style="background-color: #365368" data-color-name="Голубой" data-tab-id="4" data-tab-group="2"></a>
+                                <a href="#" class="interior-colors-choice__tabs-nav-item js-tab-btn" style="background-color: #FFF" data-color-name="Белый" data-tab-id="5" data-tab-group="2"></a>
+                            </div>
+                        </div>
+                        <div class="interior-colors-choice__right">
+                            Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.
+                        </div>
+                        <div class="interior-colors-choice__nav">
+                            <div class="tab-content js-tab-content is-selected" data-tab-id="1" data-tab-group="2">
+                                <div class="js-car-color-interior-gallery-nav swiper-button-prev" data-gallery="6"></div>
+                                <div class="js-car-color-interior-gallery-nav swiper-button-next" data-gallery="6"></div>
+                            </div>
+                            <div class="tab-content js-tab-content" data-tab-id="2" data-tab-group="2">
+                                <div class="js-car-color-interior-gallery-nav swiper-button-prev" data-gallery="7"></div>
+                                <div class="js-car-color-interior-gallery-nav swiper-button-next" data-gallery="7"></div>
+                            </div>
+                            <div class="tab-content js-tab-content" data-tab-id="3" data-tab-group="2">
+                                <div class="js-car-color-interior-gallery-nav swiper-button-prev" data-gallery="8"></div>
+                                <div class="js-car-color-interior-gallery-nav swiper-button-next" data-gallery="8"></div>
+                            </div>
+                            <div class="tab-content js-tab-content" data-tab-id="4" data-tab-group="2">
+                                <div class="js-car-color-interior-gallery-nav swiper-button-prev" data-gallery="9"></div>
+                                <div class="js-car-color-interior-gallery-nav swiper-button-next" data-gallery="9"></div>
+                            </div>
+                            <div class="tab-content js-tab-content" data-tab-id="5" data-tab-group="2">
+                                <div class="js-car-color-interior-gallery-nav swiper-button-prev" data-gallery="10"></div>
+                                <div class="js-car-color-interior-gallery-nav swiper-button-next" data-gallery="10"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="interior-pictures">
+                    <div class="interior-pictures__title">Интерьер</div>
+                    <div class="interior-pictures__list">
+                        <div class="interior-pictures__item">
+                            <a href="img/product/interior-1.jpg" data-fancybox="interior-gallery">
+                                <img src="img/product/interior-1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="interior-pictures__item">
+                            <a href="img/product/interior-2.jpg" data-fancybox="interior-gallery">
+                                <img src="img/product/interior-2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="interior-pictures__item">
+                            <a href="img/product/interior-3.jpg" data-fancybox="interior-gallery">
+                                <img src="img/product/interior-3.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+
+                    <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового
+                        океана. Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана.Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого
+                        языкового океана.</p>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="consultant">
+            <div class="container">
+                <div class="consultant-form">
+                    <div class="consultant-form__left">
+                        <div class="consultant-form__title">индивидуальная консультация</div>
+                        <div class="consultant-form__subtitle">Свяжитесь с нами и наши специалисты помогут вам выбрать автомобиль</div>
+                    </div>
+                    <div class="consultant-form__right">
+                        <form action="#">
+                            <div class="form-row" data-cols="3">
+                                <div class="form-col">
+                                    <input type="text" required placeholder="имя">
+                                </div>
+                                <div class="form-col">
+                                    <input type="tel" required placeholder="номер телефона" class="js-phone">
+                                </div>
+                                <div class="form-col">
+                                    <input type="submit" class="btn btn-black" value="Отправить заявку">
+                                </div>
+                            </div>
+                            <div class="form-row form-row--checkbox-agree" data-cols="1">
+                                <div class="form-col">
+                                    <label for="agree" class="form-checkbox">
+                                        <input type="checkbox" id="agree">
+                                        даю согласие на обработку персональных данных
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container">
+                <div class="footer-info">
+                    <div class="footer-info__logo">
+                        <a href="index.html"><img src="img/logo-white.svg" alt=""></a>
+                        <br>Watt Auto, 2023 ©
+                    </div>
+                    <div class="footer-info__address">
+                        <span>адрес:</span>
+                        г. Москва, ул. Очень длинная,
+                        <br>д. 26, к.3
+                    </div>
+                    <div class="footer-info__time">
+                        <span>режим работы:</span>
+                        ежедневно: c 9 до 20
+                    </div>
+                    <div class="footer-info__email">
+                        <span>e-mail:</span>
+                        <a href="mailto:watt-auto@mail.ru">watt-auto@mail.ru</a>
+                    </div>
+                    <div class="footer-info__btn">
+                        <a href="tel:+89909999099">8 (990) 999-90-99</a>
+                        <a href="#" class="btn btn-white-bordered">Заказать звонок</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links-col">
+                        <ul>
+                            <li class="footer-links-col__title">Автомобили</li>
+                            <li><a href="#" class="footer-link">Автомобили</a></li>
+                            <li><a href="#" class="footer-link">В пути</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <ul>
+                            <li class="footer-links-col__title">покупка</li>
+                            <li><a href="#" class="footer-link">Лучшая цена</a></li>
+                            <li><a href="#" class="footer-link">Покупка в кредит</a></li>
+                            <li><a href="#" class="footer-link">Лизинг для юр. лиц</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <ul>
+                            <li class="footer-links-col__title">Владельцам</li>
+                            <li><a href="#" class="footer-link">Сервис</a></li>
+                            <li><a href="#" class="footer-link">Эксплуатация в России</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col">
+                        <ul>
+                            <li class="footer-links-col__title">о нас</li>
+                            <li><a href="#" class="footer-link">История/возможности</a></li>
+                            <li><a href="#" class="footer-link">Доставка в крупные города ЕАЭС</a></li>
+                            <li><a href="#" class="footer-link">Клуб Watt Auto</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-links-col footer-links-col--uppercase">
+                        <ul>
+                            <li><a href="#" class="footer-link">Доп. оборудование</a></li>
+                            <li><a href="#" class="footer-link">марки авто</a></li>
+                            <li><a href="#" class="footer-link">справочник</a></li>
+                            <li><a href="#" class="footer-link">новости</a></li>
+                            <li><a href="#" class="footer-link">контакты</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <div class="copyright__link">
+                        <a href="#">Политика конфиденциальности</a>
+                    </div>
+                    <div class="copyright__dev">
+                        Разработка сайта Internet Team
+                    </div>
+                    <div class="copyright__social">
+                        <a href="#" target="_blank" class="social-link social-link--white social-link--telegram"></a>
+                        <a href="#" target="_blank" class="social-link social-link--white social-link--instagram"></a>
+                        <a href="#" target="_blank" class="social-link social-link--white social-link--vk"></a>
+                        <a href="#" target="_blank" class="social-link social-link--white social-link--whatsapp"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+<script src="js/jquery-3.7.0.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>

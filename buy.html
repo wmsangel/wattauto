@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="ru" manifest="cache.appcache">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    <title>Watt Auto</title>
+</head>
+<body>
+
+    <div id="app">
+        <header>
+            <div class="container">
+                <div class="header">
+                    <div class="header__left">
+                        <div class="header-email">
+                            <div class="header-mini-title">e-mail:</div>
+                            <a href="mailto:watt-auto@mail.ru">watt-auto@mail.ru</a>
+                        </div>
+                        <div class="header-time">
+                            <div class="header-mini-title">режим работы:</div>
+                            ежедневно: c 9 до 20
+                        </div>
+                    </div>
+                    <div class="header__middle header-logo">
+                        <a href="index.html"><img src="img/logo.svg" alt=""></a>
+                    </div>
+                    <div class="header__right">
+                        <div class="header-call">
+                            <div class="header-mini-title"><a href="#" class="js-popup-btn" data-popup-id="order-call">заказать звонок</a></div>
+                            <a href="tel:+89909999099">8 (990) 999-90-99</a>
+                        </div>
+                        <div class="header-social">
+                            <a href="#" target="_blank" class="social-link social-link--telegram"></a>
+                            <a href="#" target="_blank" class="social-link social-link--instagram"></a>
+                            <a href="#" target="_blank" class="social-link social-link--vk"></a>
+                            <a href="#" target="_blank" class="social-link social-link--whatsapp"></a>
+                        </div>
+                    </div>
+
+                    <button class="js-mobile-menu-btn mobile-menu-btn"></button>
+                </div>
+            </div>
+            <div class="nav-wrap js-mobile-nav">
+                <div class="container">
+                    <div class="nav">
+                        <div class="nav-main">
+                            <ul class="nav-list">
+                                <li class="nav-item nav-item--dropdown">
+                                    <a href="#" class="js-dropdown-link nav-link">Автомобили</a>
+                                    <ul class="nav-dropdown js-nav-dropdown">
+                                        <li><a href="#" class="nav-dropdown-link">Автомобили</a></li>
+                                        <li><a href="#" class="nav-dropdown-link">В пути</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="nav-link">Доп. оборудование</a>
+                                </li>
+                                <li class="nav-item nav-item--dropdown">
+                                    <a href="#" class="js-dropdown-link nav-link">Покупка</a>
+                                    <ul class="nav-dropdown js-nav-dropdown">
+                                        <li><a href="#" class="nav-dropdown-link">Лучшая цена</a></li>
+                                        <li><a href="#" class="nav-dropdown-link">Покупка в кредит</a></li>
+                                        <li><a href="#" class="nav-dropdown-link">Страхование</a></li>
+                                        <li><a href="#" class="nav-dropdown-link">Лизинг для юр. лиц</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item nav-item--dropdown">
+                                    <a href="#" class="js-dropdown-link nav-link">Владельцам</a>
+                                    <ul class="nav-dropdown js-nav-dropdown">
+                                        <li><a href="#" class="nav-dropdown-link">Сервис</a></li>
+                                        <li><a href="#" class="nav-dropdown-link">Эксплуатация в России</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item nav-item--dropdown">
+                                    <a href="#" class="js-dropdown-link nav-link">О нас</a>
+                                    <ul class="nav-dropdown js-nav-dropdown">
+                                        <li><a href="#" class="nav-dropdown-link">История/возможности</a></li>
+                                        <li><a href="#" class="nav-dropdown-link">Доставка в крупные города ЕАЭС</a></li>
+                                        <li><a href="#" class="nav-dropdown-link">Клуб Watt Auto</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item nav-item--dropdown nav-item--dropdown-brands">
+                                    <a href="#" class="js-dropdown-link nav-link">Марки авто</a>
+                                    <ul class="nav-dropdown js-nav-dropdown">
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_1.png" alt="">
+                                                <span>LOTUS</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_2.png" alt="">
+                                                <span>ZEEKR</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_3.png" alt="">
+                                                <span>LI</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_4.png" alt="">
+                                                <span>VOYAH</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_5.png" alt="">
+                                                <span>BYD</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_6.png" alt="">
+                                                <span>HONGQI</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_7.png" alt="">
+                                                <span>HIPHI</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_8.png" alt="">
+                                                <span>NIO</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_9.png" alt="">
+                                                <span>AVATR</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_10.png" alt="">
+                                                <span>XPENG</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_1.png" alt="">
+                                                <span>LOTUS</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_2.png" alt="">
+                                                <span>ZEEKR</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_3.png" alt="">
+                                                <span>LI</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_4.png" alt="">
+                                                <span>VOYAH</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_5.png" alt="">
+                                                <span>BYD</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_6.png" alt="">
+                                                <span>HONGQI</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_7.png" alt="">
+                                                <span>HIPHI</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_8.png" alt="">
+                                                <span>NIO</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_9.png" alt="">
+                                                <span>AVATR</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_10.png" alt="">
+                                                <span>XPENG</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_1.png" alt="">
+                                                <span>LOTUS</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_2.png" alt="">
+                                                <span>ZEEKR</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_3.png" alt="">
+                                                <span>LI</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_4.png" alt="">
+                                                <span>VOYAH</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_5.png" alt="">
+                                                <span>BYD</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_6.png" alt="">
+                                                <span>HONGQI</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_7.png" alt="">
+                                                <span>HIPHI</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_8.png" alt="">
+                                                <span>NIO</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_9.png" alt="">
+                                                <span>AVATR</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="nav-dropdown-link">
+                                                <img src="img/brands/brand_10.png" alt="">
+                                                <span>XPENG</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="nav-additional">
+                            <ul class="nav-list">
+                                <li class="nav-item"><a href="#" class="nav-link">Справочник</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Новости</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section-breadcrumbs">
+                <div class="container">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumbs-item"><a href="index.html" class="breadcrumbs-item__link">Главная</a></li>
+                        <li class="breadcrumbs-item">Покупка</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section>
+                <img src="img/buy-page/main.jpeg" alt="">
+            </section>
+
+            <section class="section-content">
+                <div class="container">
+                    <div class="buy-nav">
+                        <a href="#" class="buy-nav-item buy-nav-item--selected">Лучшая цена</a>
+                        <a href="#" class="buy-nav-item">Покупка в кредит</a>
+                        <a href="#" class="buy-nav-item">Страхование</a>
+                        <a href="#" class="buy-nav-item">Лизинг для юр. лиц</a>
+                    </div>
+
+                    <p><strong>Покупка автомобиля проходит в несколько этапов:</strong></p>
+                    <ul>
+                        <li>Индивидуальная консультация с персональным менеджером</li>
+                        <li>Тест-драйв и просмотр автомобиля при его наличии в салоне в Москве</li>
+                        <li>Заключение договора: включает в себя сервисное обслуживание, дополнительные услуги - по Вашему желанию</li>
+                        <li>После выбора автомобиля клиенту отправляется видео продукта и VIN номер</li>
+                        <li>Транспортировка автомобиля: (средние сроки 1,5-2 месяца), сбор полного пакета документов под ключ, постановка учет и выдача полного пакета документов</li>
+                        <li>Подготовка автомобиля перед передачей клиенту: детейлинг мойка и чистка салона, и другие приятные опции за наш счёт от наших партнёров</li>
+                        <li>Премиальное тюнинг и детейлинг обслуживание приобретённых автомобилей от наших партнёров А1 BRABUS RUSSIA</li>
+                    </ul>
+                    <p><strong>Оплата происходит по контракту, условия которого индивидуально согласуются с персональным менеджером.
+                        Указанные на сайте цены не являются публичной офертой и могут варьироваться в зависимости от курса валют и логистических условий.</strong></p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="consultant">
+                <div class="container">
+                    <div class="consultant-form">
+                        <div class="consultant-form__left">
+                            <div class="consultant-form__title">индивидуальная консультация</div>
+                            <div class="consultant-form__subtitle">Свяжитесь с нами и наши специалисты помогут вам выбрать автомобиль</div>
+                        </div>
+                        <div class="consultant-form__right">
+                            <form action="#">
+                                <div class="form-row" data-cols="3">
+                                    <div class="form-col">
+                                        <input type="text" required placeholder="имя">
+                                    </div>
+                                    <div class="form-col">
+                                        <input type="tel" required placeholder="номер телефона" class="js-phone">
+                                    </div>
+                                    <div class="form-col">
+                                        <input type="submit" class="btn btn-black" value="Отправить заявку">
+                                    </div>
+                                </div>
+                                <div class="form-row form-row--checkbox-agree" data-cols="1">
+                                    <div class="form-col">
+                                        <label for="agree" class="form-checkbox">
+                                            <input type="checkbox" id="agree">
+                                            даю согласие на обработку персональных данных
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-info">
+                        <div class="footer-info__logo">
+                            <a href="index.html"><img src="img/logo-white.svg" alt=""></a>
+                            <br>Watt Auto, 2023 ©
+                        </div>
+                        <div class="footer-info__address">
+                            <span>адрес:</span>
+                            г. Москва, ул. Очень длинная,
+                            <br>д. 26, к.3
+                        </div>
+                        <div class="footer-info__time">
+                            <span>режим работы:</span>
+                            ежедневно: c 9 до 20
+                        </div>
+                        <div class="footer-info__email">
+                            <span>e-mail:</span>
+                            <a href="mailto:watt-auto@mail.ru">watt-auto@mail.ru</a>
+                        </div>
+                        <div class="footer-info__btn">
+                            <a href="tel:+89909999099">8 (990) 999-90-99</a>
+                            <a href="#" class="btn btn-white-bordered">Заказать звонок</a>
+                        </div>
+                    </div>
+                    <div class="footer-links">
+                        <div class="footer-links-col">
+                            <ul>
+                                <li class="footer-links-col__title">Автомобили</li>
+                                <li><a href="#" class="footer-link">Автомобили</a></li>
+                                <li><a href="#" class="footer-link">В пути</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-col">
+                            <ul>
+                                <li class="footer-links-col__title">покупка</li>
+                                <li><a href="#" class="footer-link">Лучшая цена</a></li>
+                                <li><a href="#" class="footer-link">Покупка в кредит</a></li>
+                                <li><a href="#" class="footer-link">Лизинг для юр. лиц</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-col">
+                            <ul>
+                                <li class="footer-links-col__title">Владельцам</li>
+                                <li><a href="#" class="footer-link">Сервис</a></li>
+                                <li><a href="#" class="footer-link">Эксплуатация в России</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-col">
+                            <ul>
+                                <li class="footer-links-col__title">о нас</li>
+                                <li><a href="#" class="footer-link">История/возможности</a></li>
+                                <li><a href="#" class="footer-link">Доставка в крупные города ЕАЭС</a></li>
+                                <li><a href="#" class="footer-link">Клуб Watt Auto</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-links-col footer-links-col--uppercase">
+                            <ul>
+                                <li><a href="#" class="footer-link">Доп. оборудование</a></li>
+                                <li><a href="#" class="footer-link">марки авто</a></li>
+                                <li><a href="#" class="footer-link">справочник</a></li>
+                                <li><a href="#" class="footer-link">новости</a></li>
+                                <li><a href="#" class="footer-link">контакты</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <div class="copyright__link">
+                            <a href="#">Политика конфиденциальности</a>
+                        </div>
+                        <div class="copyright__dev">
+                            Разработка сайта Internet Team
+                        </div>
+                        <div class="copyright__social">
+                            <a href="#" target="_blank" class="social-link social-link--white social-link--telegram"></a>
+                            <a href="#" target="_blank" class="social-link social-link--white social-link--instagram"></a>
+                            <a href="#" target="_blank" class="social-link social-link--white social-link--vk"></a>
+                            <a href="#" target="_blank" class="social-link social-link--white social-link--whatsapp"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

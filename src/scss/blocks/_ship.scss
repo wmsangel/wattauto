@@ -1,0 +1,89 @@
+.ship-block {
+  margin-top: 60px;
+
+  &__title {
+    font-family: 'Gilroy';
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 22px;
+
+    @media (max-width: 600px) {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    &[data-cols="3"] {
+      .ship-block-item {
+        width: calc(100% / 3 - 20px);
+
+        @media (max-width: 992px) {
+          width: calc(100% / 2 - 20px);
+        }
+
+        @media (max-width: 600px) {
+          width: calc(100% / 1 - 20px);
+        }
+      }
+    }
+
+    &[data-cols="2"] {
+      .ship-block-item {
+        width: calc(100% / 2 - 20px);
+
+        @media (max-width: 600px) {
+          width: calc(100% / 1 - 20px);
+        }
+      }
+    }
+  }
+}
+
+.ship-block-item {
+  margin: 10px 10px 40px 10px;
+  position: relative;
+
+  &__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  &__img {
+    overflow: hidden;
+    margin-bottom: 26px;
+
+    img {
+      transition: all .3s ease;
+    }
+
+    @media (max-width: 600px) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__name {
+    font-family: 'Gilroy';
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  &:hover &__img {
+    img {
+      transform: scale(1.05);
+    }
+  }
+
+  @media (max-width: 600px) {
+    margin-bottom: 20px;
+  }
+}
