@@ -22,6 +22,7 @@ $(function (){
             },
             scrollbar: {
                 el: '.js-hero-slider .swiper-scrollbar',
+                draggable: true,
             },
         });
     }
@@ -38,6 +39,7 @@ $(function (){
             },
             scrollbar: {
                 el: '.js-top-sale .swiper-scrollbar',
+                draggable: true,
             },
             breakpoints: {
                 320: {
@@ -66,6 +68,7 @@ $(function (){
             },
             scrollbar: {
                 el: '.js-more-news .swiper-scrollbar',
+                draggable: true,
             },
             breakpoints: {
                 320: {
@@ -94,6 +97,7 @@ $(function (){
             },
             scrollbar: {
                 el: '.js-more-articles .swiper-scrollbar',
+                draggable: true,
             },
             breakpoints: {
                 320: {
@@ -133,6 +137,7 @@ $(function (){
             },
             scrollbar: {
                 el: '.js-brands-list-nav.swiper-scrollbar',
+                draggable: true,
             },
             breakpoints: {
                 320: {
@@ -191,6 +196,7 @@ $(function (){
             },
             scrollbar: {
                 el: '.js-product-page-gallery .swiper-scrollbar',
+                draggable: true,
             },
             breakpoints: {
                 320: {
@@ -206,16 +212,31 @@ $(function (){
     }
 
     if ( $('.js-car-color-body-gallery').length ) {
-        $('.js-car-color-body-gallery').each(function () {
-            let idGallery = $(this).data('gallery');
-            const carColorChoice = new Swiper('.js-car-color-body-gallery[data-gallery="'+idGallery+'"]', {
-                loop: true,
-                slidesPerView: 1,
-                navigation: {
-                    nextEl: '.js-car-color-body-gallery[data-gallery="'+idGallery+'"] .swiper-button-next',
-                    prevEl: '.js-car-color-body-gallery[data-gallery="'+idGallery+'"] .swiper-button-prev',
+        var bodyColorList = new Swiper(".js-body-color-list", {
+            spaceBetween: 20,
+            slidesPerView: 'auto',
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
                 },
-            })
+                993: {
+                    spaceBetween: 20,
+                }
+            }
+        });
+        const carColorChoice = new Swiper('.js-car-color-body-gallery', {
+            loop: true,
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.js-car-color-body-gallery.swiper-button-next',
+                prevEl: '.js-car-color-body-gallery.swiper-button-prev',
+            },
+            thumbs: {
+                swiper: bodyColorList,
+            },
         })
     }
 

@@ -52,6 +52,7 @@ h3 {
 
     img {
       width: 102px;
+      margin-left: auto;
     }
   }
 
@@ -62,6 +63,11 @@ h3 {
       order: 1;
       margin-left: 0;
       margin-bottom: 20px;
+
+      img {
+        margin-left: 24px;
+        margin-right: auto;
+      }
     }
     h1, h2, h3 {
       order: 2;
@@ -76,6 +82,7 @@ h3 {
       display: block;
       font-size: 33px;
       font-weight: 500;
+      padding-top: 8px;
     }
 
     @media (max-width: 992px) {
@@ -161,5 +168,42 @@ table {
       transform: translateY(-50%);
       right: 0;
     }
+  }
+}
+
+.swiper-scrollbar-drag {
+  cursor: pointer;
+}
+
+.section-content {
+  .title-1 {
+    font-family: 'Gilroy';
+    font-size: 65px;
+    font-weight: 600;
+    text-transform: none;
+    margin-bottom: 60px;
+  }
+}
+
+
+/**************************** mobile desktop */
+.mobile-only {
+  @media (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+.desktop-only {
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+
+/**************************** Map */
+.map {
+  iframe {
+    width: 100%;
+    border: none;
   }
 }
